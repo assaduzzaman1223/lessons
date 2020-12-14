@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java</title>
+</head>
+<body>
+<h1>JS TEST
+	
+</h1>
+<hr>
+<form>
+	<input id="data" type="text" name="name">
+	<input type="button" value="click kaiho" onclick="hello();">
+</form>
+<hr>
+<button>Color!</button>
+<script>
+	function hello(argument) {
+		const msg=document.getElementById('data').value;
+	alert(msg);
+      }
+         
+         // ボタンをさがす
+         const btn = document.querySelector('button');
+    
+         // ランダム; 色を計算するため
+         function random(number) {
+           return Math.floor(Math.random() * (number+1));
+         }
+   
+         // ボタンをクリックしたときの処理
+         btn.onclick = function() {
+           const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+           document.body.style.backgroundColor = rndCol;
+}
+</script>
+</body>
+</html>
