@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boss</title>
+</head>
+<body>
+	<h1>MY Captures</h1>
+<hr>
+<img src="cardi.jpg">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+	 const gazofiles=[
+	 `naruto.jpg`,
+	 `KING.jpg`,
+	 `cardi.jpg`]
+	 let num=0;
+	 $("img").on("wheel",function(){
+	 	 num++
+	 	if(num>2){
+	 		num=0;
+	 	}
+	 	$("img").attr("src",gazofiles[num]);
+	 })
+ })
+</script>
+</html>

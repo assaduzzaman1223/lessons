@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boss</title>
+</head>
+<body>
+	<h1>MY Captures</h1>
+<hr>
+<img src="deadly2.jpg">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		let num=1;
+		$("img").on("click",function(){
+			if(num==1){
+				$("img").attr("src","cardi.jpg");
+				num=2;
+			}else{
+                $("img").attr("src","deadly2.jpg");
+                num=1;
+			}
+		})
+	})
+</script>
+</html>
