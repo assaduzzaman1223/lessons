@@ -1,0 +1,41 @@
+
+   <html>
+     <head>
+       <title>add/remove class</title>
+     </head>
+     <style>
+       .orange{color:orange;
+        }
+        .large{font-size: 60pt;
+        }
+     </style>
+     <body>
+       <h1>add/remove class</h1>
+       <hr>
+       <button id="orange">ORANGE</button>
+       <button id="large">LARGE</button>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+         $(function(){
+           // data
+           let orange= 0
+           let large = 0
+           $("#orange").on("click", function(){
+             if ( orange == 0 ) {
+               $("h1").addClass( "orange" )
+             } else {
+               $("h1").removeClass( "orange )
+             })
+           }
+           $("#large").on("click", function(){
+             if ( large == 0 ) {
+               $("h1").addClass( "large" )
+             } else {
+               $("h1").removeClass( "large" )
+             }
+           })
+         })
+       </script>
+     </body>
+   </html>
