@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SlideShow</title>
+</head>
+<body>
+  <h1>test8</h1>
+<hr>
+<img src="picture/bmw.jpg" width="500px">
+<h2>This is the Gellery of Super Cars. pick your super cars ,ride it and feel the chill</h2>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(function(){
+   const gazofiles=[
+   'picture/bmw.jpg',
+   'picture/devel-sixteen-prototype.jpg',
+   'picture/mac.jpg',
+   'picture/marcedes.jpg']
+   const title=[
+   'BMW','DEVEL-SIXTEEN','MACLENCER','MARCEDES']
+   let num=0;
+   $("img").on("click",function(){
+     num++
+    if(num>3){
+     //// num=0;
+    }
+    $("img").attr("src",gazofiles[num]);
+    $("h2").text(title[num]);
+   })
+ })
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SlideShow</title>
+</head>
+<body>
+  <h1>test7</h1>
+<hr>
+<img src="picture/bmw.jpg">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(function(){
+   const gazofiles=[
+   'picture/bmw.jpg',
+   'picture/devel-sixteen-prototype.jpg',
+   'picture/mac.jpg',
+   'picture/marcedes.jpg']
+   let num=0;
+   $("img").on("click",function(){
+     num++
+    if(num>3){
+      num=0;
+    }
+    $("img").attr("src",gazofiles[num]);
+   })
+ })
+</script>
+</html>
