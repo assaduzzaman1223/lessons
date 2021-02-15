@@ -1,26 +1,35 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Valentine</title>
+	<title>TEST5</title>
 </head>
 <body>
-	<h1>MY Captures</h1>
-<hr>
-<img src="picture/bmw.jpg" width="720px">
+	<img id="aa" src="picture/bmw.jpg" width=720px>
+	<img id="bb" src="picture/mac.jpg" width=720px>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        const gazo = [
+          'picture/bmw.jpg',
+          'picture/mac.jpg'
+        ]
+        const imgs = [
+         'picture/mac.jpg',
+         'picture/bmw.jpg'
+        ]
+        let num = 0
+
+        $("img").on("click", function(){
+          num++
+           if ( num >= gazo.length ) {
+           
+          }
+          $("#aa").attr("src", gazo[ num ]);
+          $("#bb").attr("src", imgs[ num ]);
+        })
+      })
+    </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-	$(function(){
-		let num=1;
-		$("img").on("click",function(){
-			if(num==2){
-				$("img").attr("src","picture/bmw.jpg");
-				num=2;
-			}else{
-                $("img").attr("src","picture/mac.jpg");
-                num=1;
-			}
-		})
-	})
-</script>
 </html>
