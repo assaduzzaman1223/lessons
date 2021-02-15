@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fish name</title>
+	<style>
+		#a{color: red;}
+		
+	</style>
+</head>
+<body>
+	寿司屋
+	<hr>
+   <li>ぶり 鰤</li>
+   <li>はまち	魬　</li>
+   <li>たい　鯛</li>
+   <li id="a">まぐろ　鮪</li>
+   <li>こはだ　小鰭</li>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+	$(function(){
+$("li").on ("click",function(){
+$(this).css("font-size","50pt");
+	})
+		$("li").on("click",function(){
+   		$(this).css("color","blue");
+   	})
+})
+</script>
+
+</body>
+</html>
